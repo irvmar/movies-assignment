@@ -1,0 +1,25 @@
+<!-- movie-list.component.html -->
+<section>
+    <div class="movie-list-container">
+        <div class="movie-cards-container">
+            <!-- Movie Cards -->
+            <div class="movie-card"  
+                *ngFor="let movie of _movieList; trackBy: trackByorderIdFn"
+                (mouseenter)="onHover(movie)"
+                [ngClass]="{'active': movie.id === hoveredMovieId}">
+                <!-- Watchlist icon -->
+                <div class="watchlist-icon"  (click)="addToWatchlist(movie.id)">
+                    <span *ngIf="movie.watchlist" class="material-icons-outlined">star</span>
+                    <span *ngIf="!movie.watchlist" class="material-icons-outlined">star_border</span>
+                </div>
+                <img [src]="movie.image" alt="{{ movie.title }}" (click)="goToMovieDetails(movie.id)">
+                <div class="movie-info" >
+                    <!-- Movie Info -->
+                    <h3 (click)="goToMovieDetails(movie.id)">{{ movie.title }}</h3>
+                    <button class="btn btn-secondary" (click)="addToWatchlist(movie.id)" >{{ movie.watchlist? 'Remove from watchlist' : 'Add to watchlist'}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

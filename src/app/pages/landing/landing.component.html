@@ -1,0 +1,5 @@
+<div class="landing">
+    <app-hero class="full-width-centered"></app-hero>
+    <app-sorting-movies-actions (sortCriteriaEmiter)="onSort($event)"></app-sorting-movies-actions>
+    <app-movies-list [movieList]="movies" ></app-movies-list>
+</div>

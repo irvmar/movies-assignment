@@ -1,0 +1,12 @@
+<div class="sort-buttons">
+    <button class="sort-button" (click)="onSort('title')">
+        Sort by Title
+        <span *ngIf="sortCriteria === 'titleAsc'" class="material-icons-outlined">arrow_upward</span>
+        <span *ngIf="sortCriteria === 'titleDesc'" class="material-icons-outlined">arrow_downward</span>
+    </button>
+    <button class="sort-button" (click)="onSort('releaseDate')">
+        Sort by Release Date
+        <span *ngIf="sortCriteria === 'releaseDateAsc'" class="material-icons-outlined">arrow_upward</span>
+        <span *ngIf="sortCriteria === 'releaseDateDesc'" class="material-icons-outlined">arrow_downward</span>
+    </button>
+</div>

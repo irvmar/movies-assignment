@@ -1,0 +1,35 @@
+.sort-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sort-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f78671;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+    filter: brightness(0.9);
+}
+
+.sort-button i {
+    transition: transform 0.3s ease;
+}
+
+.fa-sort-up {
+    transform: translateY(-25%);
+}
+
+.fa-sort-down {
+    transform: translateY(25%);
+}

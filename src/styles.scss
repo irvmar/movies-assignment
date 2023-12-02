@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'material-icons/iconfont/material-icons.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+section {
+  padding: 32px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f78671;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+  //   make it darker
+  filter: brightness(0.9);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+}
+
+.btn-primary {
+  font-size: 1em;
+}
+
+.btn-secondary{
+  background: none;
+  border: 1px solid #f78671;
+  color: #f78671;
+}
+.btn-secondary:hover{
+  background: #f78671;
+  color: #fff;
+}
+.full-width-centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.sub-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 16px;
+  }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

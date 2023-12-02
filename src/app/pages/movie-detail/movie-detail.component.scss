@@ -1,0 +1,27 @@
+.movie-details{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(18, 36, 47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px 64px 16px;
+}
+
+.return-arrow-row{
+    position: relative;
+    top: 32px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 32px;
+}
+.material-icons-outlined{
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}

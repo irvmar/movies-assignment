@@ -1,0 +1,11 @@
+
+<div class="video-container" (mouseenter)="visibleDetails = false" *ngIf="_hoveredMovie">
+    <iframe class="video-dialog-iframe" [src]="_hoveredMovie.trailerLink" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+    <div *ngIf="visibleDetails" class="video-content">
+        <h1>{{ _hoveredMovie.title }}</h1>
+        <p>{{ _hoveredMovie.description }}</p>
+
+    </div>
+</div>
